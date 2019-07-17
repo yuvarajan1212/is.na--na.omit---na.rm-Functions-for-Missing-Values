@@ -1,0 +1,21 @@
+#choose file
+file.choose()
+
+#Read the file
+data <- read.csv("C:\\Users\\CDSS\\Desktop\\Data_preprocessing.csv")
+
+#find missing values
+is.na(data)
+
+#counting missing values
+sum(is.na(data))
+
+#omit missing values
+na.omit(data)
+ 
+#remove the missing values
+mean(data$Salary,na.rm = TRUE)
+
+mean(data$Age,na.rm = TRUE)
+
+
